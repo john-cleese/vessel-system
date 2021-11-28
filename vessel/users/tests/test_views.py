@@ -11,11 +11,7 @@ from django.urls import reverse
 from vessel.users.forms import UserChangeForm
 from vessel.users.models import User
 from vessel.users.tests.factories import UserFactory
-from vessel.users.views import (
-    UserRedirectView,
-    UserUpdateView,
-    user_detail_view,
-)
+from vessel.users.views import UserRedirectView, UserUpdateView, user_detail_view
 
 pytestmark = pytest.mark.django_db
 
