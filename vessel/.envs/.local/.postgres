@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=vessel
+POSTGRES_USER=TwnBeQhHOUSAeomOpQhfCxIBYHjEcdyj
+POSTGRES_PASSWORD=M6IG12jgZ15zzP3BF8p4JnMFcNP5GlPkhBiYzlDqFtJrp5muwoxGQjm5Z98VZFPk
