@@ -203,6 +203,7 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 FIXTURE_DIRS = (str(APPS_DIR / "fixtures"),)
 
 # SECURITY
+"""
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#session-cookie-httponly
 SESSION_COOKIE_HTTPONLY = True
@@ -212,6 +213,8 @@ CSRF_COOKIE_HTTPONLY = True
 SECURE_BROWSER_XSS_FILTER = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#x-frame-options
 X_FRAME_OPTIONS = "DENY"
+"""
+
 
 # EMAIL
 # ------------------------------------------------------------------------------
