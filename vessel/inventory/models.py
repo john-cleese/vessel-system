@@ -1,4 +1,3 @@
-from django.contrib.auth import get_user_model
 from django.db import models
 from django.forms import model_to_dict
 from django.urls import reverse
@@ -10,10 +9,6 @@ from vessel.core.models import ModelBase
 class Inventory(ModelBase):
     name = models.CharField("name", max_length=64, help_text="Item name.")
     qtd = models.IntegerField("quantity", help_text="Item quantity.")
-
-    created_by = models.ForeignKey(
-        get_user_model(), on_delete=models.CASCADE, null=False
-    )
 
     class Meta:
         verbose_name = "inventory"
