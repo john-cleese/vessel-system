@@ -2,8 +2,8 @@ from django.conf import settings
 from rest_framework.routers import DefaultRouter, SimpleRouter
 
 from vessel.inventory.api import InventoryViewSet
-from vessel.users.api.views import UserViewSet
 from vessel.planets.api.views import PlanetViewSet
+from vessel.users.api.views import UserViewSet
 
 if settings.DEBUG:
     router = DefaultRouter()

@@ -11,22 +11,9 @@ from vessel.planet.views import (
 app_name = "categorias"
 
 urlpatterns = [
-    path("planets/",
-        PlanetListView.as_view(),
-        name="planet-list"
-    ),
-
-    path(
-        "planet/<int:pk>/",
-        PlanetDetailView.as_view(),
-        name="planet-detail"
-    ),
-
-    path("planet/create/",
-        PlanetCreateView.as_view(),
-        name="planet-create"
-    ),
-
+    path("planets/", PlanetListView.as_view(), name="planet-list"),
+    path("planet/<int:pk>/", PlanetDetailView.as_view(), name="planet-detail"),
+    path("planet/create/", PlanetCreateView.as_view(), name="planet-create"),
     path(
         "planet/<int:pk>/delete/",
         PlanetDeleteView.as_view(),
