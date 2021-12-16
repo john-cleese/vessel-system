@@ -1,6 +1,6 @@
 from django.urls import path
 
-from vessel.planet.views import (
+from vessel.planet.views import (  # # noqa: F401
     PlanetCreateView,
     PlanetDeleteView,
     PlanetDetailView,

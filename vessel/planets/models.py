@@ -3,7 +3,6 @@ from datetime import datetime
 from django.db import models
 
 from vessel.core.models import ModelBase
-from vessel.users.models import User
 
 
 class Planet(ModelBase):

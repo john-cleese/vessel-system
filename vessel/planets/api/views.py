@@ -1,5 +1,3 @@
-from rest_framework import filters
-from rest_framework.pagination import PageNumberPagination
 from rest_framework.viewsets import ModelViewSet
 
 from vessel.planets.api.serializer import PlanetSerializer
