@@ -8,7 +8,7 @@ from vessel.planet.views import (  # # noqa: F401
     PlanetUpdateView,
 )
 
-app_name = "categorias"
+app_name = "planets"
 
 urlpatterns = [
     path("planets/", PlanetListView.as_view(), name="planet-list"),
