@@ -2,6 +2,7 @@ from django.conf import settings
 from rest_framework.routers import DefaultRouter, SimpleRouter
 
 from vessel.inventory.api import InventoryViewSet
+from vessel.planets.api.views import PlanetViewSet
 from vessel.users.api.views import UserViewSet
 
 if settings.DEBUG:
@@ -11,6 +12,7 @@ else:
 
 router.register("users", UserViewSet)
 router.register("inventory", InventoryViewSet)
+router.register("planets", PlanetViewSet)
 
 
 app_name = "api"
