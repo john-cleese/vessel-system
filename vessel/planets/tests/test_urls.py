@@ -1,7 +1,5 @@
 import pytest
-from django.urls import resolve, reverse
-
-from vessel.planets.models import Planet
+from django.urls import reverse
 
 pytestmark = pytest.mark.django_db
 
