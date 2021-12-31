@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ae2bc77-dc31-4d30-9b53-c5f812493133" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vessel/inventory/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vessel/inventory/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/vessel/inventory/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +21,11 @@
     <setting file="file://$PROJECT_DIR$/.github/workflows/ci.yml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.pylintrc" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/vessel/inventory/models.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/config/settings/production.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/config/settings/test.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/config/settings/base.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/config/settings/local.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/setup.cfg" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/vessel/inventory/apps.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/config/api_router.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.github/workflows/telegram-notifier.yml" root0="FORCE_HIGHLIGHTING" />
@@ -76,6 +78,8 @@
       <workItem from="1639340141603" duration="11201000" />
       <workItem from="1639402044290" duration="29000" />
       <workItem from="1639471868472" duration="1481000" />
+      <workItem from="1640795286934" duration="606000" />
+      <workItem from="1640943129453" duration="323000" />
     </task>
     <servers />
   </component>
