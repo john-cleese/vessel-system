@@ -2,7 +2,7 @@ import pytest
 
 from vessel.inventory.models import Inventory
 
-pytestmark = pytest.mark.django_db
+pytestmark = [pytest.mark.django_db, pytest.mark.inventory]
 
 
 # Parada

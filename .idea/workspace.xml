@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0ae2bc77-dc31-4d30-9b53-c5f812493133" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/setup.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vessel/inventory/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/vessel/inventory/tests/conftest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +80,10 @@
       <workItem from="1639402044290" duration="29000" />
       <workItem from="1639471868472" duration="1481000" />
       <workItem from="1640795286934" duration="606000" />
-      <workItem from="1640943129453" duration="323000" />
+      <workItem from="1640943129453" duration="1510000" />
+      <workItem from="1640955907218" duration="907000" />
+      <workItem from="1640972471253" duration="608000" />
+      <workItem from="1641203033977" duration="2699000" />
     </task>
     <servers />
   </component>

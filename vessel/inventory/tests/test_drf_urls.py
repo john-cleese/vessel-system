@@ -3,7 +3,7 @@ from django.urls import resolve, reverse
 
 from vessel.inventory.models import Inventory
 
-pytestmark = pytest.mark.django_db
+pytestmark = [pytest.mark.django_db, pytest.mark.inventory]
 
 
 class TestInventoryUrls:
