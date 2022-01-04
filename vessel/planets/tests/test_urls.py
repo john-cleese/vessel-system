@@ -1,9 +1,5 @@
 import pytest
-import json
-from django.urls import reverse, resolve
-from model_bakery import baker
-
-from vessel.planets.models import Planet
+from django.urls import resolve, reverse
 
 pytestmark = pytest.mark.django_db
 
@@ -19,11 +15,10 @@ class TestPlanetUrls:
 
     def test_detail(self, planet):
         assert (
-            reverse("api:planet-detail", args=(planet.pk,)) == f"/api/planets/{planet.pk}/"
+            reverse("api:planet-detail", args=(planet.pk,))
+            == f"/api/planets/{planet.pk}/"
         )
-        assert (
-            resolve(f"/api/planets/{planet.pk}/").view_name == "api:planet-detail"
-        )
+        assert resolve(f"/api/planets/{planet.pk}/").view_name == "api:planet-detail"
 
     # def test_delete(self, planet: Planet) -> None:
     #     assert reverse("api:planet-delete", kwargs={"pk": planet.pk}) == f"/planet/delete/{planet.pk}"
