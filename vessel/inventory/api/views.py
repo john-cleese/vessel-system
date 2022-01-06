@@ -21,4 +21,3 @@ class StandardResultsSetPagination(PageNumberPagination):
 class InventoryViewSet(ModelViewSet):
     queryset = Inventory.objects.all().order_by("name")
     serializer_class = InventorySerializer
-
