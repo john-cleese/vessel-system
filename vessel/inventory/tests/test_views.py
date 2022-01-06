@@ -2,6 +2,7 @@ from model_bakery import baker
 import json
 import pytest
 
+from vessel.django_assertions import assert_contains
 from vessel.inventory.models import Inventory
 
 pytestmark = [pytest.mark.django_db, pytest.mark.inventory]
@@ -33,8 +34,9 @@ class TestInventoryEndpoints:
             format='json'
         )
 
-        assert response.status_code == 201
-        assert json.loads(response.content) == expected_json
+        assert_contains(response, 'pk', status_code=201)
+        assert_contains(response, expected_json['name'], status_code=201)
+        assert_contains(response, expected_json['qtd'], status_code=201)
 
     def test_retrieve(self, api_client):
         inventory = baker.make("inventory.Inventory", _fill_optional=True, is_removed=False)
@@ -48,14 +50,14 @@ class TestInventoryEndpoints:
 
         response = api_client.get(url)
 
-        assert response.status_code == 200
-        assert json.loads(response.content) == expected_json
+        assert_contains(response, expected_json['pk'])
+        assert_contains(response, expected_json['name'])
+        assert_contains(response, expected_json['qtd'])
 
     def test_update(self, rf, api_client):
         old_inventory = baker.make("inventory.Inventory", _fill_optional=True, is_removed=False)
         new_inventory = baker.prepare("inventory.Inventory", _fill_optional=True, is_removed=False)
         inventory_dict = {
-            'pk': new_inventory.pk,
             'name': new_inventory.name,
             'qtd': new_inventory.qtd
         }
@@ -69,7 +71,8 @@ class TestInventoryEndpoints:
         )
 
         assert response.status_code == 200
-        assert json.loads(response.content) == inventory_dict
+        assert_contains(response, inventory_dict['name'])
+        assert_contains(response, inventory_dict['qtd'])
 
     @pytest.mark.parametrize('field', [
         ('name'),
