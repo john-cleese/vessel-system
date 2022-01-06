@@ -11,3 +11,6 @@ class InventorySerializer(ModelSerializer):
             "name",
             "qtd",
         )
+        extra_kwargs = {
+            'pk': {'read_only': True},
+        }
