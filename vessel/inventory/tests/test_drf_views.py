@@ -1,7 +1,6 @@
 import pytest
 
-pytestmark = pytest.mark.django_db
-
+pytestmark = [pytest.mark.django_db, pytest.mark.inventory]
 """
 class TestUserViewSet:
     def test_get_queryset(self, user: User, rf: RequestFactory):

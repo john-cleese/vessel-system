@@ -1,22 +1,16 @@
 import pytest
 from django.urls import resolve, reverse
 
-from vessel.inventory.models import Inventory
-
-pytestmark = pytest.mark.django_db
+pytestmark = [pytest.mark.django_db, pytest.mark.inventory]
 
 
-class TestInventoryUrls:
-    def test_detail(self, inventory: Inventory) -> None:
+class TestItemUrls:
+    def test_detail(self, item) -> None:
         assert (
-            reverse("api:inventory-detail", args=(inventory.pk,))
-            == f"/api/inventory/{inventory.pk}/"
+            reverse("api:item-detail", args=(item.pk,)) == f"/api/inventory/{item.pk}/"
         )
-        assert (
-            resolve(f"/api/inventory/{inventory.pk}/").view_name
-            == "api:inventory-detail"
-        )
+        assert resolve(f"/api/inventory/{item.pk}/").view_name == "api:item-detail"
 
     def test_list(self) -> None:
-        assert reverse("api:inventory-list") == "/api/inventory/"
-        assert resolve("/api/inventory/").view_name == "api:inventory-list"
+        assert reverse("api:item-list") == "/api/inventory/"
+        assert resolve("/api/inventory/").view_name == "api:item-list"

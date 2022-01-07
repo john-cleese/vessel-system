@@ -1,1 +1,1 @@
-from .views import InventoryViewSet  # # noqa: F401
+from .views import ItemViewSet  # # noqa: F401
