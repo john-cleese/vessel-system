@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ae2bc77-dc31-4d30-9b53-c5f812493133" name="Changes" comment="" />
+    <list default="true" id="0ae2bc77-dc31-4d30-9b53-c5f812493133" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +38,6 @@
     <setting file="file://$PROJECT_DIR$/vessel/inventory/apps.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/config/api_router.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/config/urls.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/.github/workflows/telegram-notifier.yml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/vessel/inventory/api/serializers.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/vessel/inventory/tests/conftest.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/vessel/inventory/tests/test_models.py" root0="FORCE_HIGHLIGHTING" />
@@ -98,7 +99,7 @@
       <workItem from="1641292085535" duration="2517000" />
       <workItem from="1641467282521" duration="14240000" />
       <workItem from="1641506879347" duration="2753000" />
-      <workItem from="1641550751293" duration="6350000" />
+      <workItem from="1641550751293" duration="7165000" />
     </task>
     <servers />
   </component>

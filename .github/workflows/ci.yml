@@ -7,11 +7,11 @@ env:
 
 on:
   pull_request:
-    branches: [ "issue15" ]
+    branches: [ "dev", "main" ]
     paths-ignore: [ "docs/**" ]
 
   push:
-    branches: [ "issue15" ]
+    branches: [ "dev", "main" ]
     paths-ignore: [ "docs/**" ]
 
 
@@ -64,8 +64,8 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            *${{ github.actor }}* created commit on *${{ github.repository }}*
-            ${{ github.event.commits[0].message }}
+            *${{ github.actor }}* created commit on *${{ github.repository }}*, pass on tests, ready for review.
+            Message: ${{ github.event.commits[0].message }}
             [See changes](https://github.com/${{ github.repository }}/commit/${{github.sha}})
           format: markdown
           disable_web_page_preview: true
