@@ -2,7 +2,7 @@ name: telegram message
 
 on:
   pull_request:
-    branches: [ "dev", "main" ]
+    branches: [ "issue15" ]
     paths-ignore: [ "docs/**" ]
 
 jobs:
