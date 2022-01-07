@@ -1,14 +1,21 @@
-name: telegram message
+name: Telegram notifier
 
 on:
   pull_request:
     branches: [ "issue15" ]
     paths-ignore: [ "docs/**" ]
 
+  push:
+    branches: [ "issue15" ]
+    paths-ignore: [ "docs/**" ]
+
+
+
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
+    needs: [linter, pytest]
     steps:
       - name: send telegram message on pull request
         uses: appleboy/telegram-action@master

@@ -13,9 +13,7 @@ class TestInventoryEndpoints:
     endpoint = "/api/inventory/"
 
     def test_list(self, api_client):
-        baker.make(
-            "inventory.Item", _quantity=3, _fill_optional=True, is_removed=False
-        )
+        baker.make("inventory.Item", _quantity=3, _fill_optional=True, is_removed=False)
 
         response = api_client.get(self.endpoint)
 
@@ -23,9 +21,7 @@ class TestInventoryEndpoints:
         assert len(json.loads(response.content)) == 3
 
     def test_create(self, api_client):
-        item = baker.prepare(
-            "inventory.Item", _fill_optional=True, is_removed=False
-        )
+        item = baker.prepare("inventory.Item", _fill_optional=True, is_removed=False)
         expected_json = {"name": item.name, "qtd": item.qtd}
 
         response = api_client.post(self.endpoint, data=expected_json, format="json")
@@ -35,9 +31,7 @@ class TestInventoryEndpoints:
         assert_contains(response, expected_json["qtd"], status_code=201)
 
     def test_retrieve(self, api_client):
-        item = baker.make(
-            "inventory.Item", _fill_optional=True, is_removed=False
-        )
+        item = baker.make("inventory.Item", _fill_optional=True, is_removed=False)
         expected_json = {
             "pk": item.pk,
             "name": item.name,
@@ -53,9 +47,7 @@ class TestInventoryEndpoints:
         assert_contains(response, expected_json["qtd"])
 
     def test_update(self, rf, api_client):
-        old_item = baker.make(
-            "inventory.Item", _fill_optional=True, is_removed=False
-        )
+        old_item = baker.make("inventory.Item", _fill_optional=True, is_removed=False)
         new_item = baker.prepare(
             "inventory.Item", _fill_optional=True, is_removed=False
         )
@@ -77,9 +69,7 @@ class TestInventoryEndpoints:
         ],
     )
     def test_partial_update(self, field, api_client):
-        item = baker.make(
-            "inventory.Item", _fill_optional=True, is_removed=False
-        )
+        item = baker.make("inventory.Item", _fill_optional=True, is_removed=False)
         item_dict = {
             "pk": item.pk,
             "name": item.name,
@@ -95,9 +85,7 @@ class TestInventoryEndpoints:
         assert json.loads(response.content)[field] == valid_field
 
     def test_delete(self, api_client):
-        item = baker.make(
-            "inventory.Item", _fill_optional=True, is_removed=False
-        )
+        item = baker.make("inventory.Item", _fill_optional=True, is_removed=False)
         url = f"{self.endpoint}{item.pk}/"
 
         response = api_client.delete(url)
