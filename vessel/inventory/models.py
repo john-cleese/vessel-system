@@ -6,19 +6,19 @@ from vessel.core.models import ModelBase
 
 
 # Create your models here.
-class Inventory(ModelBase):
+class Item(ModelBase):
     name = models.CharField("name", max_length=64, help_text="Item name.")
     qtd = models.IntegerField("quantity", help_text="Item quantity.")
 
     class Meta:
-        verbose_name = "inventory"
-        verbose_name_plural = "inventories"
+        verbose_name = "item"
+        verbose_name_plural = "items"
 
     def __str__(self):
         return self.name
 
     def __repr__(self):
-        return f"Inventory({model_to_dict(self)})"
+        return f"Item{model_to_dict(self)})"
 
     def get_absolute_url(self):
-        return reverse("api:inventory-detail", kwargs={"pk": self.pk})
+        return reverse("api:item-detail", kwargs={"pk": self.pk})

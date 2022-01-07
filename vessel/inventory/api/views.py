@@ -2,8 +2,8 @@
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.viewsets import ModelViewSet
 
-from vessel.inventory.api.serializers import InventorySerializer
-from vessel.inventory.models import Inventory
+from vessel.inventory.api.serializers import ItemSerializer
+from vessel.inventory.models import Item
 
 
 class LargeResultsSetPagination(PageNumberPagination):
@@ -18,6 +18,6 @@ class StandardResultsSetPagination(PageNumberPagination):
     max_page_size = 50
 
 
-class InventoryViewSet(ModelViewSet):
-    queryset = Inventory.objects.all().order_by("name")
-    serializer_class = InventorySerializer
+class ItemViewSet(ModelViewSet):
+    queryset = Item.objects.all().order_by("name")
+    serializer_class = ItemSerializer
