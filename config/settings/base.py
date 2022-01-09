@@ -63,7 +63,7 @@ DJANGO_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # "django.contrib.humanize", # Handy template tags
-    'drf_spectacular',
+    "drf_spectacular",
     "django.contrib.admin",
     "django.forms",
 ]
@@ -289,7 +289,7 @@ REST_FRAMEWORK = {
         "rest_framework_simplejwt.authentication.JWTAuthentication",
     ),
     "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.IsAuthenticated",),
-    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
 }
 
 SIMPLE_JWT = {
@@ -301,9 +301,9 @@ SIMPLE_JWT = {
     "ALGORITHM": "HS256",
 }
 SPECTACULAR_SETTINGS = {
-    'TITLE': 'API Docs Vessel System',
-    'DESCRIPTION': 'Documentation for using the api of Vessel System',
-    'VERSION': '1.0.0',
+    "TITLE": "API Docs Vessel System",
+    "DESCRIPTION": "Documentation for using the api of Vessel System",
+    "VERSION": "1.0.0",
     # OTHER SETTINGS
 }
 # django-cors-headers - https://github.com/adamchainz/django-cors-headers#setup
