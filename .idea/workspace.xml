@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ae2bc77-dc31-4d30-9b53-c5f812493133" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/vessel/core/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vessel/core/tests/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vessel/core/tests/test_urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vessel/core/tests/test_views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vessel/core/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vessel/inventory/tests/test_drf_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/vessel/inventory/tests/test_urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vessel/inventory/tests/test_drf_views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vessel/core/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/vessel/core/tests/test_views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
