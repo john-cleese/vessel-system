@@ -9,8 +9,8 @@ from vessel.inventory.models import Item
 pytestmark = [pytest.mark.django_db, pytest.mark.inventory]
 
 
-class TestInventoryEndpoints:
-    endpoint = "/api/inventory/"
+class TestItemEndpoints:
+    endpoint = "/api/inventory/items/"
 
     def test_list(self, api_client):
         baker.make("inventory.Item", _quantity=3, _fill_optional=True, is_removed=False)
