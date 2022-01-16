@@ -18,3 +18,4 @@ django-redis==5.0.0  # https://github.com/jazzband/django-redis
 djangorestframework==3.12.4  # https://github.com/encode/django-rest-framework
 django-cors-headers==3.10.0 # https://github.com/adamchainz/django-cors-headers
 djangorestframework-simplejwt==5.0.0 # https://django-rest-framework-simplejwt.readthedocs.io/en/latest/index.html
+drf-spectacular==0.21.1 # https://github.com/tfranzel/drf-spectacular

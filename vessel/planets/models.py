@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import date
 
 from django.db import models
 
@@ -17,8 +17,15 @@ class Planet(ModelBase):
 
     @property
     def age(self):
-        age = self.discovery_date - datetime.datetime.now()
-        return age
+        today = date.today()
+        return (
+            today.year
+            - self.discovery_date.year
+            - (
+                (today.month, today.day)
+                < (self.discovery_date.month, self.discovery_date.day)
+            )
+        )
 
     class Meta:
         verbose_name = "Planet"

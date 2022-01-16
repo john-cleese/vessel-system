@@ -11,8 +11,7 @@ else:
     router = SimpleRouter()
 
 router.register("users", UserViewSet)
-# todo refactor to inventory/items
-router.register("inventory", ItemViewSet)
+router.register("inventory/items", ItemViewSet)
 router.register("planets", PlanetViewSet)
 
 

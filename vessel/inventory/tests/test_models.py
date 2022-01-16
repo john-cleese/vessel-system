@@ -12,3 +12,13 @@ class TestItemModel:
 
     def test_obj(self, item) -> None:
         assert isinstance(item, Item)
+
+    def test_soft_delete(self, item) -> None:
+        item.delete()
+        assert Item.objects.count() == 0
+        assert Item.all_objects.count() == 1
+
+    def test_hard_delete(self, item) -> None:
+        item.hard_delete()
+        assert Item.objects.count() == 0
+        assert Item.all_objects.count() == 0
