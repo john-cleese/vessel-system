@@ -2,7 +2,7 @@
 	"variables": [],
 	"info": {
 		"name": "API Vessel System",
-		"_postman_id": "2f8058bd-8e0e-fa88-ca27-24e0fc0c4ea4",
+		"_postman_id": "e3cdeb31-69dc-3713-3a2b-ccef983d6bcd",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
@@ -10,129 +10,136 @@
 		{
 			"name": "PLANETS",
 			"description": "",
-			"item": []
-		},
-		{
-			"name": "PLANETS LIST ALL",
-			"request": {
-				"url": "http://localhost:8000/api/planets/",
-				"method": "GET",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQyMzMzNjkwLCJpYXQiOjE2NDIzMzMzOTAsImp0aSI6IjAwNDRiNzQ1MGRjODRmMDdhNDViMzg3NDY3ZTJjY2Y0IiwidXNlcl9pZCI6Mn0.cLZZ2f8f5JJ215EwF29Vnr7cbNn9Z6ogLpxcYhnevIk",
-						"description": ""
-					}
-				],
-				"body": {},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "PLANET DETAILS",
-			"request": {
-				"url": "http://localhost:8000/api/planets/856644c3-4b68-4c7e-8b30-075c54d9c973",
-				"method": "GET",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQyMzMzNjkwLCJpYXQiOjE2NDIzMzMzOTAsImp0aSI6IjAwNDRiNzQ1MGRjODRmMDdhNDViMzg3NDY3ZTJjY2Y0IiwidXNlcl9pZCI6Mn0.cLZZ2f8f5JJ215EwF29Vnr7cbNn9Z6ogLpxcYhnevIk",
-						"description": ""
-					}
-				],
-				"body": {},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "PLANET CREATE",
-			"request": {
-				"url": "http://localhost:8000/api/planets/",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQyMzMzNjkwLCJpYXQiOjE2NDIzMzMzOTAsImp0aSI6IjAwNDRiNzQ1MGRjODRmMDdhNDViMzg3NDY3ZTJjY2Y0IiwidXNlcl9pZCI6Mn0.cLZZ2f8f5JJ215EwF29Vnr7cbNn9Z6ogLpxcYhnevIk",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "name",
-							"value": "Planet 02",
-							"type": "text"
+			"item": [
+				{
+					"name": "PLANETS LIST ALL",
+					"request": {
+						"url": "http://localhost:8000/api/planets/",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQyMzMzNjkwLCJpYXQiOjE2NDIzMzMzOTAsImp0aSI6IjAwNDRiNzQ1MGRjODRmMDdhNDViMzg3NDY3ZTJjY2Y0IiwidXNlcl9pZCI6Mn0.cLZZ2f8f5JJ215EwF29Vnr7cbNn9Z6ogLpxcYhnevIk",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
 						},
-						{
-							"key": "total_area",
-							"value": "1234",
-							"type": "text"
-						},
-						{
-							"key": "population",
-							"value": "56789",
-							"type": "text"
-						},
-						{
-							"key": "discovery_date",
-							"value": "1988-10-23 00:00:00",
-							"type": "text"
-						}
-					]
+						"description": ""
+					},
+					"response": []
 				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "PLANET UPDATE",
-			"request": {
-				"url": "http://localhost:8000/api/planets/cbf7013c-d681-44c3-b13b-64322df67094/",
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQyMzMzNjkwLCJpYXQiOjE2NDIzMzMzOTAsImp0aSI6IjAwNDRiNzQ1MGRjODRmMDdhNDViMzg3NDY3ZTJjY2Y0IiwidXNlcl9pZCI6Mn0.cLZZ2f8f5JJ215EwF29Vnr7cbNn9Z6ogLpxcYhnevIk",
+				{
+					"name": "PLANET DETAILS",
+					"request": {
+						"url": "http://localhost:8000/api/planets/856644c3-4b68-4c7e-8b30-075c54d9c973",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQyMzMzNjkwLCJpYXQiOjE2NDIzMzMzOTAsImp0aSI6IjAwNDRiNzQ1MGRjODRmMDdhNDViMzg3NDY3ZTJjY2Y0IiwidXNlcl9pZCI6Mn0.cLZZ2f8f5JJ215EwF29Vnr7cbNn9Z6ogLpxcYhnevIk",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
-					}
-				],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "name",
-							"value": "Planet 022",
-							"type": "text"
-						},
-						{
-							"key": "total_area",
-							"value": "1234",
-							"type": "text"
-						},
-						{
-							"key": "population",
-							"value": "56789",
-							"type": "text"
-						},
-						{
-							"key": "discovery_date",
-							"value": "1988-10-23 00:00:00",
-							"type": "text"
-						},
-						{
-							"key": "pk\n",
-							"value": "cbf7013c-d681-44c3-b13b-64322df67094",
-							"description": "",
-							"type": "text"
-						}
-					]
+					},
+					"response": []
 				},
-				"description": ""
-			},
-			"response": []
+				{
+					"name": "PLANET CREATE",
+					"request": {
+						"url": "http://localhost:8000/api/planets/",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQyMzMzNjkwLCJpYXQiOjE2NDIzMzMzOTAsImp0aSI6IjAwNDRiNzQ1MGRjODRmMDdhNDViMzg3NDY3ZTJjY2Y0IiwidXNlcl9pZCI6Mn0.cLZZ2f8f5JJ215EwF29Vnr7cbNn9Z6ogLpxcYhnevIk",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Planet 02",
+									"type": "text"
+								},
+								{
+									"key": "total_area",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "population",
+									"value": "56789",
+									"type": "text"
+								},
+								{
+									"key": "discovery_date",
+									"value": "1988-10-23 00:00:00",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "PLANET UPDATE",
+					"request": {
+						"url": "http://localhost:8000/api/planets/cbf7013c-d681-44c3-b13b-64322df67094/",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQyMzMzNjkwLCJpYXQiOjE2NDIzMzMzOTAsImp0aSI6IjAwNDRiNzQ1MGRjODRmMDdhNDViMzg3NDY3ZTJjY2Y0IiwidXNlcl9pZCI6Mn0.cLZZ2f8f5JJ215EwF29Vnr7cbNn9Z6ogLpxcYhnevIk",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Planet 022",
+									"type": "text"
+								},
+								{
+									"key": "total_area",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "population",
+									"value": "56789",
+									"type": "text"
+								},
+								{
+									"key": "discovery_date",
+									"value": "1988-10-23 00:00:00",
+									"type": "text"
+								},
+								{
+									"key": "pk\n",
+									"value": "cbf7013c-d681-44c3-b13b-64322df67094",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
