@@ -2,7 +2,7 @@
 	"variables": [],
 	"info": {
 		"name": "API Vessel System",
-		"_postman_id": "e3cdeb31-69dc-3713-3a2b-ccef983d6bcd",
+		"_postman_id": "c4e5ccb0-0109-bfad-7eaa-38e3755cd337",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
@@ -131,6 +131,125 @@
 									"key": "pk\n",
 									"value": "cbf7013c-d681-44c3-b13b-64322df67094",
 									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "INVENTORY (ITEMS)",
+			"description": "",
+			"item": [
+				{
+					"name": "INVENTORY LIST ALL",
+					"request": {
+						"url": "http://localhost:8000/api/inventory/items/",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQyMzMzNjkwLCJpYXQiOjE2NDIzMzMzOTAsImp0aSI6IjAwNDRiNzQ1MGRjODRmMDdhNDViMzg3NDY3ZTJjY2Y0IiwidXNlcl9pZCI6Mn0.cLZZ2f8f5JJ215EwF29Vnr7cbNn9Z6ogLpxcYhnevIk",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "INVENTORY DETAILS",
+					"request": {
+						"url": "http://localhost:8000/api/inventory/items/856644c3-4b68-4c7e-8b30-075c54d9c973",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQyMzMzNjkwLCJpYXQiOjE2NDIzMzMzOTAsImp0aSI6IjAwNDRiNzQ1MGRjODRmMDdhNDViMzg3NDY3ZTJjY2Y0IiwidXNlcl9pZCI6Mn0.cLZZ2f8f5JJ215EwF29Vnr7cbNn9Z6ogLpxcYhnevIk",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "INVENTORY CREATE",
+					"request": {
+						"url": "http://localhost:8000/api/inventory/items/",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQyMzMzNjkwLCJpYXQiOjE2NDIzMzMzOTAsImp0aSI6IjAwNDRiNzQ1MGRjODRmMDdhNDViMzg3NDY3ZTJjY2Y0IiwidXNlcl9pZCI6Mn0.cLZZ2f8f5JJ215EwF29Vnr7cbNn9Z6ogLpxcYhnevIk",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Item 01",
+									"type": "text"
+								},
+								{
+									"key": "qtd",
+									"value": "200",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "INVENTORY UPDATE",
+					"request": {
+						"url": "http://localhost:8000/api/inventory/items/cbf7013c-d681-44c3-b13b-64322df67094/",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQyMzMzNjkwLCJpYXQiOjE2NDIzMzMzOTAsImp0aSI6IjAwNDRiNzQ1MGRjODRmMDdhNDViMzg3NDY3ZTJjY2Y0IiwidXNlcl9pZCI6Mn0.cLZZ2f8f5JJ215EwF29Vnr7cbNn9Z6ogLpxcYhnevIk",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "pk\n",
+									"value": "cbf7013c-d681-44c3-b13b-64322df67094",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Item 0001",
+									"type": "text"
+								},
+								{
+									"key": "qtd",
+									"value": "101",
 									"type": "text"
 								}
 							]
